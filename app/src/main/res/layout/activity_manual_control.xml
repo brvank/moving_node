@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme"
+    android:orientation="vertical"
+    tools:context=".View.ManualControlActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvDirStat"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_margin="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="- - - "/>
+
+        <ImageView
+            android:id="@+id/ivToggleManual"
+            android:src="@drawable/off"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:layout_height="match_parent">
+
+            <com.example.movingnode.Utils.widget.CImageView
+                android:id="@+id/ivUp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/up"
+                android:layout_margin="8dp"/>
+
+            <com.example.movingnode.Utils.widget.CImageView
+                android:id="@+id/ivDown"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/down"
+                android:layout_margin="8dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="end|bottom"
+            android:layout_height="match_parent">
+
+            <com.example.movingnode.Utils.widget.CImageView
+                android:id="@+id/ivLeft"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/left"
+                android:layout_margin="8dp"/>
+
+            <com.example.movingnode.Utils.widget.CImageView
+                android:id="@+id/ivRight"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/right"
+                android:layout_margin="8dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    
+</LinearLayout>

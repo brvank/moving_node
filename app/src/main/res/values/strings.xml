@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Moving Node</string>
+    <string name="manual">Manual</string>
+    <string name="gesture">Gesture</string>
+    <string name="gravity">Gravity</string>
+
+</resources>
