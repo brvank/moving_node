@@ -25,13 +25,6 @@
             android:exported="false"
             android:screenOrientation="landscape"  />
 
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCaZWXzo0ltosgDo3s5yMAJqqKdlvRpgBI" /> <!-- android:value="AIzaSyCYPJ9h9JjRbDMTgaAKfUIibfP51JKg3M4" -->
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
-
         <activity
             android:name=".View.GravityControlActivity"
             android:exported="false"
