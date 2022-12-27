@@ -52,6 +52,8 @@ public class GestureControlActivity extends AppCompatActivity {
                     ivToggle.setImageResource(R.drawable.on);
                 }else{
                     ivToggle.setImageResource(R.drawable.off);
+                    action = Action.ACTION_IDLE;
+                    myOkHttpClient.performAction(action);
                 }
             }
         });

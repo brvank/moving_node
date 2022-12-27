@@ -88,8 +88,7 @@ public class MyOkHttpClient {
         try{
             webSocket.send(String.valueOf(direction));
         }catch (Exception e){
-            LOG.d(e.getMessage());
-            Toast.makeText(context, e.getMessage(), Toast.LENGTH_SHORT).show();
+            e.printStackTrace();
         }
     }
 

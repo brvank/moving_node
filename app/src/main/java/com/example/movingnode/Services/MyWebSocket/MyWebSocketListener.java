@@ -69,10 +69,11 @@ public class MyWebSocketListener extends WebSocketListener{
     }
 
     void createToast(String message){
+        if(message.isEmpty()) return;
         ((Activity)context).runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                Toast.makeText(context, message, Toast.LENGTH_LONG).show();
+                Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
             }
         });
     }
