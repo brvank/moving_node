@@ -65,11 +65,7 @@ public class MyWebSocketListener extends WebSocketListener{
     @Override
     public void onOpen(@NonNull WebSocket webSocket, @NonNull Response response) {
         LOG.d("connection open");
-        if(response.code() == 200){
-            createToast("Connected");
-        }else{
-            createToast("Something went wrong!");
-        }
+        createToast("Connected");
     }
 
     void createToast(String message){
