@@ -31,9 +31,8 @@ public class ShakeControlActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shake_control);
 
-        ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
-            actionBar.hide();
+        if(getSupportActionBar() != null){
+            getSupportActionBar().hide();
         }
 
         viewsSetUp();

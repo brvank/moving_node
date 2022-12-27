@@ -34,9 +34,8 @@ public class GestureControlActivity extends AppCompatActivity {
         setContentView(R.layout.activity_gesture_control);
         setTitle(R.string.gesture);
 
-        ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
-            actionBar.hide();
+        if(getSupportActionBar() != null){
+            getSupportActionBar().hide();
         }
 
         //setting up text views

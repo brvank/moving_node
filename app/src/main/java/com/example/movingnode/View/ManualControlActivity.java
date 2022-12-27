@@ -32,9 +32,8 @@ public class ManualControlActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manual_control);
 
-        ActionBar actionBar = getSupportActionBar();
-        if(actionBar != null){
-            actionBar.hide();
+        if(getSupportActionBar() != null){
+            getSupportActionBar().hide();
         }
 
         //setting up views
